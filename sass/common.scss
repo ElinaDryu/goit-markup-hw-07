@@ -1,0 +1,54 @@
+@import "./utils/variables";
+
+body {
+  font-family: var(--main-font);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.active-page {
+  color: var(--accent-color-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0%;
+}
+
+ul {
+  margin: 0%;
+  padding: 0%;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
