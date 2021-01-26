@@ -5,53 +5,48 @@ footer {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer__items {
-  font-style: normal;
-  display: block;
-}
 
-.footer__adress {
-  margin-top: 20px;
-  width: 231px;
-}
+  &__items {
+    font-style: normal;
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
 
-.footer {
-  &__item:not(:last-child) {
-    margin-bottom: 9px;
+  &__adress {
+    margin-top: 20px;
+    width: 231px;
+  }
+
+  &__contacts {
+    font-family: var(--main-font);
+    color: var(--secondary-color-white-transparence);
+    text-decoration: none;
+    @include font(14px, 400, 24px);
+    letter-spacing: 0.03em;
   }
 }
 
-.footer__contacts {
-  font-family: var(--main-font);
-  color: var(--secondary-color-white-transparence);
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}
 .logo__footer {
   color: var(--accent-color-white);
 }
-
 .map {
   color: var(--accent-color-white);
 }
-
 .footer__social-links {
   display: block;
   margin-left: 70px;
 }
-.footer .container {
-  display: flex;
+.footer {
+  .container {
+    display: flex;
+  }
 }
 .footer-call {
   display: flex;
   color: var(--accent-color-white);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
+  @include font(14px, 700, 16px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -59,12 +54,6 @@ footer {
 }
 .footer__link {
   display: flex;
-}
-
-.footer__social-links {
-  .social-link__list {
-    background-color: rgba(255, 255, 255, 10%);
-  }
 }
 .footer__social-links {
   .social-list__icon {
@@ -74,17 +63,20 @@ footer {
 
 .footer-call-form {
   margin-left: 93px;
-}
 
-.footer-call-form__text {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--accent-color-white);
-  padding-top: 12px;
-  display: block;
+  &__text {
+    @include font(14px, 700, 16px) letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color-white);
+    padding-top: 12px;
+    display: block;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
 }
 
 .footer__input {
@@ -100,27 +92,18 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
-}
-.footer-call-form__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-}
 
-.footer__input:hover,
-.footer__input:focus {
-  outline: none;
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 .footer__btn--send {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--accent-color-blue);
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  color: var(--accent-color-white);
+  @include font(16px, 700, 30px) color: var(--accent-color-white);
   letter-spacing: 0.06em;
   cursor: pointer;
   border-color: var(--accent-color-blue);
@@ -128,22 +111,23 @@ footer {
   display: flex;
   align-items: center;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer__btn--send:hover,
-.footer__btn--send:focus {
-  background-color: var(--btn-hover-color);
-  border-color: var(--btn-hover-color);
-}
-.footer__btn--send::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-color: var(--accent-color-blue);
-  background-image: url(../img/icon_send.svg);
-  display: inline-flex;
-  margin-left: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: var(--accent-color-blue);
+    background-image: url(../img/icon_send.svg);
+    display: inline-flex;
+    margin-left: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer__btn--send:hover:after {
@@ -154,4 +138,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer__social-links {
+  .social-link__list {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
