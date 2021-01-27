@@ -386,7 +386,7 @@ border-color: var(--btn-hover-color);
 
 /* ========== HERO ========== */
 
-.hero {
+/* .hero {
   background: var(--footer-bcg);
   padding-top: 200px;
   padding-bottom: 280px;
@@ -401,9 +401,9 @@ border-color: var(--btn-hover-color);
   background-position: center;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.hero .container {
+/* .hero .container {
   text-align: center;
 }
 
@@ -437,20 +437,20 @@ border-color: var(--btn-hover-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   animation-duration: 1000ms;
   animation-iteration-count: 3;
-}
+} */
 
-.hero__btn:hover,
+/* .hero__btn:hover,
 .hero__btn:focus {
   background: var(--btn-hover-color);
   color: var(--accent-color-white);
   cursor: pointer;
-}
+} */
 
 /* ========== END HERO ========== */
 
 /* ========== ADVANTAGES ========== */
 
-.advantages {
+/* .advantages {
   background: var(--header-bcg);
 }
 
@@ -483,12 +483,12 @@ border-color: var(--btn-hover-color);
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-}
+} */
 /* ========== END ADVANTAGES ========== */
 
 /* ========== ACTIVITY ========== */
 
-.activity {
+/* .activity {
   background: var(--header-bcg);
   padding-bottom: 94px;
 }
@@ -530,12 +530,12 @@ border-color: var(--btn-hover-color);
 }
 .activity__item {
   position: relative;
-}
+} */
 /* ========== END ACTIVITY ========== */
 
 /* ========== TEAM ========== */
 
-.team {
+/* .team {
   background: var(--team-bcg);
 }
 .team__subtitle {
@@ -587,7 +587,7 @@ border-color: var(--btn-hover-color);
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
-}
+} */
 
 /* ========== END TEAM ========== */
 /* ============================================== END MAIN PAIGE =========================================================== */
@@ -595,7 +595,7 @@ border-color: var(--btn-hover-color);
 /* ============================================== PORTFOLIO ===============================================================*/
 
 /* ========== BTN PORTFOLIO ========== */
-.filters__btn {
+/* .filters__btn {
   background-color: var(--portfolio-bcg-btn-color);
   color: var(--main-color-black);
   font-weight: 500;
@@ -650,11 +650,11 @@ border-color: var(--btn-hover-color);
 
 .filter__list:not(:last-child) {
   margin-right: 8px;
-}
+} */
 /* ========== END BTN PORTFOLIO ========== */
 
 /* ==========  PORTFOLIO EXAMPLES========== */
-.portfolio__examples {
+/* .portfolio__examples {
   background-color: var(--accent-color-white);
 }
 
@@ -709,11 +709,11 @@ border-color: var(--btn-hover-color);
   border: 1px solid var(--portfolio-bcg-cards-color);
   border-top: none;
   width: 370px;
-}
+} */
 
 /* ====ANIMATION==== */
 
-.overlay-wrapper {
+/* .overlay-wrapper {
   position: relative;
   overflow: hidden;
 }
@@ -737,14 +737,14 @@ border-color: var(--btn-hover-color);
 .portfolio__examples:hover .overlay,
 .portfolio__link:focus .overlay {
   transform: translateY(0%);
-}
+} */
 /* ==== END ANIMATION==== */
 
 /* ========== END PORTFOLIO EXAMPLES========== */
 
 /* ============================================= ICONS ======================================================== */
 
-.social-link__list {
+/* .social-link__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -764,8 +764,8 @@ border-color: var(--btn-hover-color);
 .social-link__list:hover,
 .social-link__list:focus {
   background-color: var(--accent-color-blue);
-}
-.social-link {
+} */
+/* .social-link {
   display: flex;
   justify-content: center;
   margin-top: 16px;
@@ -775,9 +775,9 @@ border-color: var(--btn-hover-color);
   width: 20px;
   height: 20px;
   fill: var(--color1, #afb1b8);
-}
+} */
 
-.social-list:not(:last-child) {
+/* .social-list:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -803,13 +803,13 @@ border-color: var(--btn-hover-color);
 }
 .icon__astronaut::before {
   background-image: url("../img/astronaut.svg");
-}
+} */
 
 /* ============================================= END ICONS ======================================================== */
 
 /* ============================================= CLIENTS ======================================================== */
 
-.clients-title {
+/* .clients-title {
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
@@ -893,13 +893,13 @@ border-color: var(--btn-hover-color);
 .clients-container-link {
   transition: all 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
-}
+} */
 
 /* ============================================= END CLIENTS ======================================================== */
 
 /* ================================================= MODAL =================================================================== */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1116,5 +1116,5 @@ border-color: var(--btn-hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--btn-hover-color);
   border-color: var(--btn-hover-color);
-  outline: none;
+  outline: none; */
 /* ================================================= END MODAL =================================================================== */ ;

@@ -1,0 +1,31 @@
+.advantages {
+  background: var(--header-bcg);
+}
+
+.advantages-items {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__title {
+    color: var(--main-color-black);
+    @include font(14px, 700, 16px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--main-color-grey);
+    @include font(14px, 400, 24px);
+    letter-spacing: 0.03em;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
